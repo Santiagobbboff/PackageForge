@@ -23,6 +23,15 @@ The original app stays installed. A clone starts with fresh data; this app does 
 
 Each Package Forge installation generates its own RSA signing key inside Android Keystore. Repeated exports from the same installation use that key. Uninstalling Package Forge or clearing its data loses the key. A later clone may need a fresh installation instead of updating an existing clone; removing that clone normally deletes its data. Exported APKs are kept in private app storage until you clear them or uninstall the app.
 
+## Example
+
+
+| Stock Geekbench 7                   | Geekbench 7 with GB6 package name   |
+| ----------------------------------- | ----------------------------------- |
+| ![GB7](https://github.com/user-attachments/assets/ab1d854d-6c9c-478a-801e-1fc44cd9c4cd) | ![GB7 C](https://github.com/user-attachments/assets/1ca77ee0-0f05-499d-94f5-955982de81db) |
+
+Geekbench 7 on a Xiaomi 17T Pro, because it is too new, HyperOS doesn't have any whitelist for it yet, so the phone runs it as if its not a benchmarking app. By changing the package name to the Geekbench 6 one, the phone now treats it as a benchmarking app and clocks the CPU higher.
+
 ## Compatibility limits
 
 Renaming does **not** directly control CPU/GPU clocks or guarantee a performance increase. Whether benchmark package names trigger different scheduling or clocks depends on the phone and firmware.

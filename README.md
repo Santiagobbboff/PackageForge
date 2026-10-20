@@ -1,6 +1,6 @@
 # Package Forge
 
-An offline Android app that turns an installed app, APK, or compatible split archive into a renamed, signed standalone APK. Android 8.0+ (API 26). No root, account, server or internet permission. Useful for converting emulators and games into a "Benchmark version", since phones boost their GPU and CPU clocks dramatically if they think they are running some sort of benchmarking app. This was entirely vibe-coded.
+An offline Android app that turns an installed app, APK, or compatible split archive into a renamed, signed standalone APK. Android 8.0+ (API 26). No root, account, server or internet permission. Useful for converting emulators and games into a "Benchmark version", since phones boost their GPU and CPU clocks dramatically if they think they are running some sort of benchmarking app. Built entirely with vibe-coding.
 
 ## Use it
 

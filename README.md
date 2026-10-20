@@ -1,6 +1,6 @@
 # Package Forge
 
-An offline Android app that turns an installed app, APK, or compatible split archive into a renamed, signed standalone APK. Android 8.0+ (API 26). No root, account, server or internet permission.
+An offline Android app that turns an installed app, APK, or compatible split archive into a renamed, signed standalone APK. Android 8.0+ (API 26). No root, account, server or internet permission. Useful for converting emulators and games into a "Benchmark version", since phones boost their GPU and CPU clocks dramatically if they think they are running some sort of benchmarking app.
 
 ## Use it
 
@@ -39,11 +39,9 @@ The following are intentionally rejected or not repaired:
 
 The parser limits inputs to 4 GiB combined and 512 APKs. Large apps can still exceed available memory. Keep roughly four times the original input size free before starting; the service checks for at least three times the imported size after copying.
 
-This is a sideloaded personal utility. Listing arbitrary installed apps requires `QUERY_ALL_PACKAGES`. Google Play distribution would require a separate policy review. No data leaves the app unless you choose Save or Share.
-
 ## Build
 
-Open this folder in Android Studio, or install JDK 17 and Android SDK Platform 35, set `ANDROID_HOME` (or create your own `local.properties`), then run:
+Open this projects's folder in Android Studio, or install JDK 17 and Android SDK Platform 35, set `ANDROID_HOME` (or create your own `local.properties`), then run:
 
 ```powershell
 .\gradlew.bat :app:assembleDebug :engine:test :app:lintDebug
